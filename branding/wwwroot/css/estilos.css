@@ -11,7 +11,7 @@ body{
     background: var(--background-color);
 }
 .titulos{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -19,11 +19,11 @@ body{
 }
 
 .subtitulo{
-    font-size: 25px;
+    font-size: 55px;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    color: var(--color-primario);
+    color: #273A67;
 }
 
 .btn{
