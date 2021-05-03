@@ -27,17 +27,17 @@ body{
 }
 
 .btn{
-    text-decoration: none;
+    text-decoration: unset;
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
     background: var(--color-primario);
     font-weight: 700;
-    padding: 15px 30px;
+    padding: 30px 60px;
     outline: none;
     border: 2px solid var(--color-primario);
     cursor: pointer;
-    position: relative;
+    position: center;
     top: 20px;
     transition: all 0.3s;
 }
