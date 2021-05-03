@@ -3,9 +3,6 @@
 }
 
 
-<link rel="stylesheet" href="CSS/estilos.css">
-<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
-
 <main role="main">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
@@ -71,7 +68,7 @@
        <div  style="text-align: center;" class="carousel-caption">
             <h1 style="position: center;right: 500px ;top: -215px" class="text-white"> SESION </h1>
             <h1 style="position: center;right: 490px ;top: -210px" class="text-white">FOTOGRAFICA</h1>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary" >¡SOLICITAR COTIZACION! </button>
+            <button style="position: center;right: 450px ;top: -150px " class="btn btn-dark" >¡SOLICITAR COTIZACION! </button>
           </div>
     </div>
   
@@ -86,116 +83,79 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
 <hr size="35px" width="80%" align="center" color="#394665"/>
  <!-- SECCION INFORMACION -->
     <section id="servicios">
         <div class="titulos">
-            <h2 class="subtitulo">agencia de marketing digital</h2>
+            <h2 class="subtitulo" align="center" >AGENCIA DE MARKETING DIGITAL</h2>
             <div class="subtitulos">
-        	<p> Somos una agencia de marketing digital Peruana especializada en Branding, Social Media Marketing, Creacion de Websites.</p>
+        	<p align="center" > Somos una agencia de marketing digital Peruana especializada en Branding, Social Media Marketing, Creacion de Websites.</p>
         </div>
         </div>
         <hr size="35px" width="80%" align="center" color="#394665"/>
 <!--Sección Servicios-->
     <section id="servicios">
+      <div class="container">
         <div class="titulos">
-            <h1 class="titulos">Nuestro Servicios</h1>
+            <h1 class="titulos" align="center" >Nuestro Servicios</h1>
         </div>
-        <div class="contenedor-servicios">
-            <div class="img-central">
-                <img src="./IMG/alfalogo.png" alt="">
-            </div>
-
             <div class="items ecommerce">
-                <p><span class="fas fa-shopping-cart"></span></p>
-                <p class="titulo-item">Ecommerce</p>
-                <p class="texto-item">Todo para que tu negocio comience en las ventas online de forma globalizada.</p>
+                <img src="~/img/monitor.png" width="130" height="80">
+                <p class="titulo-item">Diseño Web</p>
             </div>
 
             <div class="items diseñoweb">
-                <p><span class="fas fa-laptop-code"></span></p>
-                <p class="titulo-item">Diseño Web</p>
-                <p class="texto-item">Llevado a cabo por nuestro equipo multidisciplinario que te brindara un servicio de calidad de acuerdo a tus necesidades.</p>
+                <img src="~/img/tiendaonline.png" width="130" height="80">
+                <p class="titulo-item">Diseño de Tiendas Online</p>
             </div>
 
             <div class="items socialmedia">
-                <p><span class="fas fa-desktop"></span></p>
+                <img src="~/img/socialmedia.png" width="130" height="80">
                 <p class="titulo-item">Social Media Marketing</p>
-                <p class="texto-item">Post para las redes sociales de tu empresa y de los productos que ofreces. </p>
             </div>
 
             <div class="items spot">
-                <p><span class="fas fa-video"></span></p>
+                <img src="~/img/spot.png" width="130" height="80">
                 <p class="titulo-item">Spot Publicitario</p>
-                <p class="texto-item">Nos encargamos de la produccion y Post produccion del Spot publicitario de tu producto o servicio.</p>
             </div>
              <div class="items branding">
-                <p><span class="fab fa-angrycreative"></span></p>
+                <img src="~/img/diseñografico.png" width="130" height="80">
                 <p class="titulo-item">Branding</p>
-                <p class="texto-item">Desarrollamos la imagen de tu empresa a traves de un logo e imagenes de acuerdo al rubro de tu empresa.</p>
             </div>
-              
-              <div class="items fotos">
-                <p><span class="fas fa-camera"></span></p>
-                <p class="titulo-item">Sesion Fotografica </p>
-                <p class="texto-item">Realizamos Sesiones de fotos Comerciales y Personales.</p>
+            <div class="items branding">
+                <img src="~/img/fotografia.png" width="130" height="80">
+                <p class="titulo-item">Sesion de Fotos</p>
             </div>
+       </div> 
+</div>
 
-        </div>
-
-    </section> 
-    <!--Contacto-->
-    <section id="contacto">
+      <div class="container">
         <div class="titulos-contacto">
-            <h2 class="subtitulo">Queremos conocer tu opinión</h2>
-            <h1 class="titulos">Contáctanos</h1>
-        </div>
-
+            <h1 class="titulos" align="center" >Haz tu Consulta</h1>
+        </div>     
         <form action="" id="formulario">
             <div class="two-fields">
-                <div class="input-icono">
-                    <input type="text" id="nombre" name="nombre" class="input-text" placeholder="nombre">
-                    <i class="fas fa-user"></i>
+              
+                <div class="form-group">
+                    <input type="text" name="nombre"  placeholder="Ingrese su Nombre:" class = "form-control">
                 </div>
 
-                <div class="input-icono">
-                    <input type="email" id="email" name="email" class="input-email" placeholder="Email">
-                    <i class="fas fa-envelope"></i>
+                <div class="form-group">
+
+                    <input type="email" name="email"  placeholder="Email:" class = "form-control" >
                 </div>
             </div>
 
-            <div class="field">
-                <div class="input-icono textarea-icono">
-                    <textarea name="comentarios" id="comentarios" class="textarea" placeholder="Ingrese su mensaje"></textarea>
-                    <i class="fas fa-comments"></i>
+            
+                <div class="form-group">
+                    <textarea name="comentarios"  rows="3" placeholder="Ingrese su Mensaje" class = "form-control" ></textarea>
                 </div>
-            </div>
 
             <div class="field-btn">
-                <input type="submit" class="btn btn-input" value="Enviar">
+                <input type="submit" class="btn btn-dark" value="Enviar">
             </div>
         </form>
+        </div>
     </section>
-<footer>
-        <div class="sociales-metodo">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ubicanos en: </span>
-        </div>
-
-        <div class="sociales-metodo">
-            <i class="fas fa-envelope"></i>
-            <span>alfamarketing@gmail.com</span>
-        </div>
-
-        <div class="sociales-metodo">
-            <i class="fas fa-phone"></i>
-            <span>941604559</span>
-        </div>
-
-        <div class="sociales-metodo">
-            <i class="fab fa-facebook"></i>
-            <span>alfamarketing</span>
-        </div>
-    </footer>
-
-    <script src="JS/app.js"></script>
