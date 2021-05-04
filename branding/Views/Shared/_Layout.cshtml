@@ -6,6 +6,9 @@
     <title>@ViewData["Title"] Branding</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="~/lib/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +19,7 @@
             <div class="container">
              
                              
-                <a class="navbar-brand" asp-area="" asp-controller="Home" style="color:white"  asp-action="Index"><img src="~/img/alfalogo.png" width="130" height="65">ALFA </a>
+                <a class="navbar-brand text-whitee" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/alfalogo.png" width="130" height="65">ALFA</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,10 +33,10 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Home"  asp-action="Precio">Precio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Contacto" asp-action="Contacto">Contacto</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Contacto" asp-action="Portafolio">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Quienes Somos" asp-action="Quienes Somos">Quienes Somos</a>
+                            <a class="nav-link text-white"  asp-area="" asp-controller="Quienes Somos" asp-action="Quienes Somos">Quienes Somos</a>
                         </li>
                     </ul>
                     <partial name="_LoginPartial" />
@@ -55,7 +58,20 @@
 </body>
 </html>
   <footer id="footer">
-
+    <div class="footer-top">
+      <div class="container" data-aos="fade-up">
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>ALFA MARKETING</h3>
+            <p>Nuestras Redes Sociales</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+         </div>
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">

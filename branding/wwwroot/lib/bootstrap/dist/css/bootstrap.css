@@ -9875,7 +9875,16 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
+  font-size: 1.4rem;
+  font-family: sans-serif;
 }
+.text-whitee {
+  color: #fff !important;
+  font-size: 2rem;
+  font-family:Arial black, Helvetica, sans-serif;
+  -webkit-text-stroke: 1px  #000000;
+}
+
 
 .text-primary {
   color: #007bff !important;

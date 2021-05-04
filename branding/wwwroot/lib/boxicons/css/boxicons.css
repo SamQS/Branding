@@ -818,7 +818,9 @@
   content: "\e961";
 }
 .bxl-twitter:before {
-  content: "\e962";
+  content: "\e962";  
+  width:20px ;
+  
 }
 .bxl-unsplash:before {
   content: "\e963";
