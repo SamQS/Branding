@@ -1,0 +1,22 @@
+@model List<Consulta>
+
+<h1> Consultas Registradas </h1>
+
+
+<table class = "table">
+<tr>
+    <th>Nombres</th>
+    <th>Email</th>
+    <th>Consulta</th>
+</tr>
+@foreach (var c in Model)
+{
+    <tr>
+        <td>@c.Nombre</td>
+        <td>@c.Email</td>
+        <td>@c.Consult</td>
+    </tr>
+}
+
+
+</table>

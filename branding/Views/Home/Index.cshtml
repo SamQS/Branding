@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Consulta
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -12,7 +13,7 @@
             <h3 style="position: center;right: 490px ;top: -210px" >AGENCIA DE</h3>
             <h3 style="position: center;right: 500px ;top: -205px" >MARKETING</h3>          
             <h3 style="position: center;right: 530px ;top: -200px" >DIGITAL</h3>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
          
     </div>
@@ -22,7 +23,7 @@
        <div  style="text-align: center;" class="carousel-caption">
             <h3 style="position: center;right: 500px ;top: -215px" >DISEÑO</h3>
             <h3 style="position: center;right: 490px ;top: -210px" >WEB</h3>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
 
@@ -32,7 +33,7 @@
             <h3 style="position: center;right: 500px ;top: -215px" > DISEÑO </h3>
             <h3 style="position: center;right: 490px ;top: -210px" >TIENDA</h3>
             <h3 style="position: center;right: 490px ;top: -205px" >ONLINE</h3>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
     <div class="carousel-item ">
@@ -41,14 +42,14 @@
             <h3 style="position: center;right: 500px ;top: -230px" > SOCIAL </h3>
             <h3 style="position: center;right: 490px ;top: -225px" >MEDIA</h3>
             <h3 style="position: center;right: 490px ;top: -220px" >MARKETING</h3>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
     <div class="carousel-item ">
        <img src="~/img/branding2.png" class="d-block w-100" alt="..." style="width: 1150px; height:600px">
        <div  style="text-align: center;" class="carousel-caption">
             <h3 style="position: center;right: 490px ;top: -210px" >BRANDING</h3>
-            <button style="position: centertive;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg " >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
 
@@ -57,7 +58,7 @@
        <div  style="text-align: center;" class="carousel-caption">
             <h3 style="position: center;right: 500px ;top: -215px" >SPOT</h3>
             <h3 style="position: center;right: 490px ;top: -210px" >PUBLICITARIO</h3>
-            <button style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg"  >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
 
@@ -66,7 +67,7 @@
        <div  style="text-align: center;" class="carousel-caption">
             <h3 style="position: center;right: 500px ;top: -215px" > SESION </h3>
             <h3 style="position: center;right: 490px ;top: -210px" >FOTOGRAFICA</h3>
-            <button style="position: center;right: 450px ;top: -150px " class="btn btn-dark btn-lg" >¡SOLICITAR COTIZACION! </button>
+            <a href="https://localhost:5001/Consulta/consultas" style="position: center;right: 450px ;top: -150px "  class="btn btn-secondary btn-lg" >¡SOLICITAR COTIZACION! </a>
           </div>
     </div>
   
@@ -150,31 +151,3 @@
 </div>
 </div>
  </section>
-<section id="biografia" class="biografia section-bggg">
-      <div class="container">
-        <div class="section-title">
-            <h1 class="titulos" align="center">Haz tu Consulta</h1>
-            <hr size="35px" width="50%" align="center" color="#394665"/> 
-        </div>     
-
-        <form action="" id="formulario">
-            <div class="two-fields">
-              
-                <div class="form-group">
-                    <input type="text" name="nombre" placeholder="Ingrese su nombre:" class = "form-control">
-                </div>
-
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email:" class = "form-control" >
-                </div>
-            </div>            
-                <div class="form-group">
-                    <textarea name="comentarios"  rows="3" placeholder="Ingrese su consulta:" class = "form-control" ></textarea>
-                </div>
-
-            <div class="field-btn">
-                <button class="btn btn-secondary btn-xg ">ENVIAR</button>
-            </div>
-        </form>
-        </div>
-    </section>
