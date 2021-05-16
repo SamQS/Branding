@@ -10,7 +10,7 @@ using branding.Data;
 namespace branding.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210516214842_MigracionIni")]
+    [Migration("20210516223636_MigracionIni")]
     partial class MigracionIni
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

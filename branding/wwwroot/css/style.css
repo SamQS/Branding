@@ -1,6 +1,6 @@
 ﻿﻿body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 a {
@@ -198,9 +198,9 @@ section {
   content: '';
   position: absolute;
   display: block;
-  width: 40px;
-  height: 3px;
-  background: #fdc134;
+  width: 45px;
+  height: 4px;
+  background: #dfbc6c;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -393,7 +393,7 @@ section {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 #footer .footer-top h3 {
