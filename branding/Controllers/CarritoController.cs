@@ -6,25 +6,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-
-namespace branding.Controllers 
+namespace branding.Controllers
 {
-    public class PrecioController : Controller
+    public class CarritoController : Controller
+    
     {
      private readonly ILogger<HomeController> _logger;
 
-        public PrecioController(ILogger<HomeController> logger)
+        public CarritoController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }       
-         public IActionResult Precios()
+         public IActionResult carrito()
          {
             return View();
-        }
-        public IActionResult PreciosCliente()
-         {
-            return View();
-        }
-
         }
     }
+}
