@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data-sources>
-	<data-source id="postgres-jdbc-1797727a96d-1eb27fc2ae1343ae" provider="postgresql" driver="postgres-jdbc" name="d768vvthcme8li" save-password="true" read-only="false">
-		<connection host="Host=ec2-52-44-31-100.compute-1.amazonaws.com" port="5432" server="" database="d768vvthcme8li" url="jdbc:postgresql://Host=ec2-52-44-31-100.compute-1.amazonaws.com:5432/d768vvthcme8li" user="smbvwmxzwambvi" password="SlEFcUVHRkIGEQNqRkQXUCNBXRwVEhsicHNAAEtSAAURAFQEAQUWF2wqTwBQEFQDI0MQEE4GR19tExRGV3VFVSWl" home="postgresql_client" type="dev">
+	<data-source id="postgres-jdbc-179772ea29e-3aa907159be62983" provider="postgresql" driver="postgres-jdbc" name="d768vvthcme8li" save-password="true" read-only="false">
+		<connection host="ec2-52-44-31-100.compute-1.amazonaws.com" port="5432" server="" database="d768vvthcme8li" url="jdbc:postgresql://ec2-52-44-31-100.compute-1.amazonaws.com:5432/d768vvthcme8li" user="smbvwmxzwambvi" password="SlEFcUVHRkIGEQNqRkQXUCNBXRwVEhsicHNAAEtSAAURAFQEAQUWF2wqTwBQEFQDI0MQEE4GR19tExRGV3VFVSWl" home="postgresql_client" type="dev">
 			<provider-property name="@dbeaver-show-non-default-db@" value="false"/>
 			<provider-property name="@dbeaver-show-template-db@" value="false"/>
 			<provider-property name="@dbeaver-show-unavailable-db@" value="false"/>
+			<provider-property name="show-database-statistics" value="false"/>
 			<provider-property name="@dbeaver-read-all-data-types-db@" value="false"/>
+			<provider-property name="@dbeaver-use-prepared-statements-db@" value="false"/>
 			<provider-property name="postgresql.dd.plain.string" value="false"/>
 			<provider-property name="postgresql.dd.tag.string" value="false"/>
 			<provider-property name="@dbeaver-chosen-role@" value=""/>
