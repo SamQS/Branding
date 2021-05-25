@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using branding.Models;
@@ -14,5 +14,7 @@ namespace branding.Data
         {
         }
         public DbSet<Consulta> Consultas {get ;set; }
+        public DbSet<branding.Models.Producto> Producto { get; set; }
+        public DbSet<branding.Models.Proforma> Proforma { get; set; }
     }
 }
