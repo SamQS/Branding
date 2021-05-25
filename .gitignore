@@ -452,3 +452,4 @@ bin/
 
 
 branding/Views/Consulta/consultas.cshtml
+branding/Areas/Identity/Pages/Account/Login.cshtml
