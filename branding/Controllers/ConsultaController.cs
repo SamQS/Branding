@@ -30,7 +30,7 @@ namespace branding.Controllers
             if(ModelState.IsValid){
                 _context.Add(c);
                 _context.SaveChanges();
-                return RedirectToAction("ListarConsultas");
+                return RedirectToAction("confirmacion");
             }
             return View(c);
         } 

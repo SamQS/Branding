@@ -18,11 +18,11 @@ namespace branding.Models
 
         public Decimal Price {get; set;}
 
-        public String ImagenName { get; set; }
+        public String ImagenName { get; set;}
 
         public String Status {get; set;}
 
-        public virtual ICollection<Proforma> ProformaItems { get; set; }
+        public virtual ICollection<Proforma> Proforma { get; set; }
 
 
         

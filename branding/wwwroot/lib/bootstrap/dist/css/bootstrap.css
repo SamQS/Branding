@@ -9875,12 +9875,12 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: sans-serif;
 }
 .text-whitee {
   color: #fff !important;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family:Arial black, Helvetica, sans-serif;
   -webkit-text-stroke: 1px  #000000;
 }

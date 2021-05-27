@@ -1,0 +1,25 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+     @if(UserManager.GetUserName(User).Equals("diegodsqs3@gmail.com")){
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-area="" asp-controller="Producto" asp-action="Index"> Agregar Producto</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-area="" asp-controller="Proforma" asp-action="Index">Carrito</a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link text-white"  asp-area="" asp-controller="Consulta" asp-action="ListarConsultas">Ver Consultas</a>
+        </li>
+    }else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-white" asp-area="" asp-controller="Proforma" asp-action="Index">Carrito</a>
+        </li> 
+    }
+}
+</ul>
