@@ -5,43 +5,46 @@
     ViewData["Title"] = "Iniciar Sesion - ";
 }
 
-<h1>@ViewData["Title"]</h1>
+
 
 <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
     
     <!-- Los iconos tipo Solid de Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-
-<!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="static/css/login.css">
-
 <body>
-     <div class="modal-dialog text-center">
-        <div class="col-sm-12 main-section">
-            <div class="modal-content">
-                <div class="col-12 user-img">
+    <main role="main">
+    <section id="catalogue" class="biografia section-bggg">
+        
+        <div class="container bg-white mt-5 rounded shadow " >
+        <div class="row align-items-center align-items-stretch">
+            <div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded bg">
+                <img src="~/img/cameraini.jpg" alt="" style="width: 800px; height:850px" class="position-relative" >
+            </div>
+
+        
+     <div class="col bg-white p-5 col-lg-7 col-xl-6 rounded-end">
+            
+                <div class="section-title section-titleee">
                     <img src="~/img/alfalogo.png" alt="" style="width:300px" class="position-relative" >
-                </div>
-            <section class="section-title">
+                    <h2 class="fw-bold text-center pt-5 mb-5">Iniciar sesion</h2>
+                
+            
                 <form id="account" method="post">
-                    <h2 class="fw-bold text-center pt-5 mb-5">ALFA  AGENCIA DE MARKETING DIGITAL</h2>
-                    <h4 class="fw-bold text-center pt-5 mb-5">Inicie Sesion con su cuenta registrada</h4>
-                    <hr />
+                    
                     <div asp-validation-summary="All" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Input.Email"></label>
-                        <input asp-for="Input.Email" class="form-control" />
+                    <div class="mb-4">
+                        <label asp-for="Input.Email" class="form-label">Correo electrónico</label>
+                        <input asp-for="Input.Email" type="email" class="form-control" />
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="Input.Password"></label>
+                    <div class="mb-4">
+                        <label asp-for="Input.Password">Contraseña</label>
                         <input asp-for="Input.Password" class="form-control" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
@@ -57,15 +60,13 @@
                         <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
                     </div>
                     <div class="form-group">
-                        <p>
-                            <a id="forgot-password" asp-page="./ForgotPassword">¿No recuerdas tu contraseña?</a>
-                        </p>
-                        <p>
-                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrar un Nuevo Usuario</a>
-                        </p>
+                            <a id="forgot-password" asp-page="./ForgotPassword"><h9>¿No recuerdas tu contraseña?</h9></a>
+                        </br>
+                            <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl"><h9>Registrar un Nuevo Usuario</h9></a>
+                        
                     </div>
                 </form>
-            </section>
+           
         </div>
     
     </div>

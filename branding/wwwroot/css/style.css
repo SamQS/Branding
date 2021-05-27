@@ -46,7 +46,7 @@ h4{
 }
 
 .tables{
-  background: #1d2124;
+  background: #343a40;
 }
 
 .tables th{
@@ -165,7 +165,12 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 80px;
+  
 }
+.section-titleee {
+  background: linear-gradient(180deg, rgb(207, 205, 205) 0%, rgb(255, 255, 255) 100%) !important;
+}
+
 
 .section-title h2 {
   font-size: 45px;
@@ -390,7 +395,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #1d2124;
+  background: #343a40;
   z-index: 1;
 }
 
@@ -707,8 +712,9 @@ h3{
   }
 h9{
   text-align: center;
-  color: #000000;    
-  font-size: 30px;
+  color: #1a2537;    
+  font-size: 20px;
+  font-weight: 500;
   }
 
 input[type="text"],

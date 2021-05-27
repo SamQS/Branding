@@ -4605,7 +4605,17 @@ input[type="button"].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
+  background: linear-gradient(180deg, rgb(33, 59, 82) 0%, rgb(33, 59, 82) 100%);
 }
+.card-bodyy {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+  background: linear-gradient(180deg, #343a40 0%,#343a40 100%);
+}
+
+
+
 
 .card-title {
   margin-bottom: 0.75rem;
@@ -6617,7 +6627,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background: linear-gradient(180deg, rgb(207, 205, 205) 0%, rgb(255, 255, 255) 100%) !important;
 }
 
 .bg-transparent {
