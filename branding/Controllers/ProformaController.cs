@@ -7,23 +7,32 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using branding.Data;
 using branding.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace branding.Controllers
 {
     public class ProformaController : Controller
     {
         private readonly ApplicationDbContext _context;
+         private readonly UserManager<IdentityUser> _userManager;
 
-        public ProformaController(ApplicationDbContext context)
+        public ProformaController(ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Proforma
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Proforma.Include(p => p.Producto);
-            return View(await applicationDbContext.ToListAsync());
+
+            var userID = _userManager.GetUserName(User);
+            var items = from o in _context.Proforma select o;
+            items = items.
+                Include(p => p.Producto).
+                Where(s => s.UserID.Equals(userID));
+            
+            return View(await items.ToListAsync());
         }
 
         // GET: Proforma/Details/5
