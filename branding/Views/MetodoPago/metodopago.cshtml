@@ -16,21 +16,21 @@
 
 
     
-    <form method="get">    
+<form >    
+  
  <div class="row">
-     <h9>Seleccione el metodo de pago:</h9> <br>
+     <h9>Seleccione un metodo de pago para que lo redireccione:</h9>
+     
         <div class="col-lg-2">
         <div class="form-group">              
-            <input type="checkbox" name = "pagoPersonal" class = "form-control">
-            <a  for ="pagoPersonal " href="/PagoPersonal/pagopersonal" ></a> 
+            <input type="checkbox" name = "pagoPersonal" class = "form-control" onchange= "window.location.replace('/PagoPersonal/pagopersonal')">
          </div>   
          <div class="form-group"> 
-            <input type="checkbox" name = "pagoEfectivo" class = "form-control">
-            <a  for ="pagoEfectivo " href="/PagoEfectivo/pagoefectivo" ></a> 
+            <input type="checkbox" name = "pagoEfectivo" class = "form-control" onchange= "window.location.replace('/PagoEfectivo/pagoefectivo')">
+            
          </div> 
          <div class="form-group"> 
-            <input type="checkbox" name = "pagoTarjeta" class = "form-control" checked>
-            <a  for ="pagoTarjeta " href="/PagoTarjeta/pagotarjeta" ></a> 
+            <input type="checkbox" name = "pagoTarjeta" class = "form-control" onchange= "window.location.replace('/PagoTarjeta/pagotarjeta')">
          </div> 
          </div>
          <div class="col-lg-3">
@@ -46,10 +46,14 @@
       </div>
 
     </div>      
-          <button class="btn btn-secondary ">ENVIAR</button> 
           </div>
-          
-          </form>
+
+          <a href="/Proforma/Index" class="btn btn-primary text-white"  aling = "">VOLVER AL CARRITO</a> 
+</form>
+
+
          
 </body> 
 
+
+	
