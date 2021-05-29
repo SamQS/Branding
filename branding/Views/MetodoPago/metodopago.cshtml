@@ -1,0 +1,55 @@
+   @{
+    ViewData["Title"] = "Metodo de Pago - ";
+}
+
+
+
+<body>
+
+    <section id="catalogue" class="biografia section-bggg">
+    <div id="projects-detail" class="pt-5 pb-5 text-center">
+      <div class="container">
+        <div class="section-title">
+        <h2 aling = "center "data-aos="fade-in">Metodos de Pago</h2>
+        <h9 data-aos="fade-in"></h9>
+        </div>
+
+
+    
+    <form method="get">    
+ <div class="row">
+     <h9>Seleccione el metodo de pago:</h9> <br>
+        <div class="col-lg-2">
+        <div class="form-group">              
+            <input type="checkbox" name = "pagoPersonal" class = "form-control">
+            <a  for ="pagoPersonal " href="/PagoPersonal/pagopersonal" ></a> 
+         </div>   
+         <div class="form-group"> 
+            <input type="checkbox" name = "pagoEfectivo" class = "form-control">
+            <a  for ="pagoEfectivo " href="/PagoEfectivo/pagoefectivo" ></a> 
+         </div> 
+         <div class="form-group"> 
+            <input type="checkbox" name = "pagoTarjeta" class = "form-control" checked>
+            <a  for ="pagoTarjeta " href="/PagoTarjeta/pagotarjeta" ></a> 
+         </div> 
+         </div>
+         <div class="col-lg-3">
+      <div class="form-group">
+        <span class="hide" id="msg_rut" style="color:black; position: absolute;margin-top: 5px; margin-left: -200px;">Pago Personal</span>
+</div>
+        <div class="form-group">
+        <span class="hide" id="msg_rut" style="color:black; position: absolute;margin-top: 45px; margin-left: -200px;">Pago Efectivo</span>
+      </div>
+
+        <div class="form-group">
+        <span class="hide" id="msg_rut" style="color:black; position: absolute;margin-top: 98px; margin-left: -200px;">Pago por Tarjeta Visa o Mastercard</span>
+      </div>
+
+    </div>      
+          <button class="btn btn-secondary ">ENVIAR</button> 
+          </div>
+          
+          </form>
+         
+</body> 
+
