@@ -1,13 +1,16 @@
 @model IEnumerable<branding.Models.Producto>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Agregar - ";
 }
-
-<h1>Index</h1>
+<section id="catalogue" class="biografia section-bggg">
+        <div class="container">
+         <div class="section-title">
+          <h2 aling = "center "data-aos="fade-in">AGREGAR O EDITAR UN PRODUCTO</h2>
+        </div>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create"><h9>Agregar Producto</h9></a>
 </p>
 <table class="table">
     <thead>
@@ -24,7 +27,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
-            <th></th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
@@ -43,9 +46,9 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Borrar</a>
             </td>
         </tr>
 }

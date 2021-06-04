@@ -712,8 +712,9 @@ h3{
   }
 h9{
   text-align: center;
-  color: #1a2537;    
-  font-size: 20px;
+  color: #3a3a50;  
+  -webkit-text-stroke: 2px  #3a3a50;  
+  font-size: 25px;
   font-weight: 500;
   }
 
