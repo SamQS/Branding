@@ -14,7 +14,7 @@ namespace branding.Models
 
         public String UserID {get; set;}        
 
-        public Decimal Price { get; set; }
+        public double Price { get; set; }
 
         public Producto Producto {get; set;}
 

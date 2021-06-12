@@ -16,7 +16,7 @@ namespace branding.Models
 
         public String Name {get; set;}
 
-        public Decimal Price {get; set;}
+        public double Price {get; set;}
 
         public String ImagenName { get; set;}
 

@@ -34,7 +34,7 @@
                 @Html.DisplayFor(modelItem => item.Producto.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+               S/. @Html.DisplayFor(modelItem => item.Price)
             </td>            
             <td>
                 <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.ID">Detalles</a> |
@@ -45,4 +45,24 @@
 }
     </tbody>
 </table>
+      @{
+         var total = 0.0;
+         var contar = 1;
+      }
+      @foreach (var item in Model){
+         <tr>
+            @{
+               total = total + item.Price;
+               contar++;
+            }
+         </tr>
+      }
+
+<div class="container">
+         <h4>Total: S/ @total </h4> 
+
+
+
+
 <a href="/MetodoPago/metodopago" class="btn btn-primary text-white" >CONTINUAR</a> 
+</div>
