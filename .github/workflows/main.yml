@@ -8,9 +8,9 @@ name: Deploy to heroku
 
 env:
 #REGISTRARLO EN GITHUB\SETTINGS\SECRET (EL VALOR VIENE HEROKU\ACCOUNT SETTINGS\APPLICATIONS)
-  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY1 }}
 #CAMBIAR AQUI NOMBRE DEL APLICATIVO EN HEROKU EN EL DASHBOARD
-  HEROKU_APP_NAME: ${{ 'app-netcore-branding' }}
+  HEROKU_APP_NAME: ${{ 'app-netcore-programacion00' }}
 
 jobs:
   build_webapp:
@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Docker build
-      run: docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+      run: docker login --username=_ --password=$HEROKU_API_KEY1 registry.heroku.com
 
     - name: Publish
       run: |
